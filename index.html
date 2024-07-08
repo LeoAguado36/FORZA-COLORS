@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Converter for Forza Horizon 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Converter for Forza Horizon 5</h1>
+        <form id="colorForm">
+            <label for="colorInput">Enter Color (Hex, Pantone, or RGB):</label>
+            <input type="text" id="colorInput" placeholder="#FFFFFF, PANTONE 300, rgb(255, 255, 255)">
+            <button type="submit">Convert</button>
+        </form>
+        <div id="result">
+            <h2>Forza Horizon 5 Color Code:</h2>
+            <div class="sliders">
+                <label for="hue">Hue:</label>
+                <input type="range" id="hue" min="0" max="1" step="0.01">
+                <label for="saturation">Saturation:</label>
+                <input type="range" id="saturation" min="0" max="1" step="0.01">
+                <label for="brightness">Brightness:</label>
+                <input type="range" id="brightness" min="0" max="1" step="0.01">
+            </div>
+            <p id="fh5ColorCode"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
